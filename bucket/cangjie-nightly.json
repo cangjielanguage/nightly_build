@@ -1,0 +1,49 @@
+{
+    "version": "1.3.0-alpha.20260902010013",
+    "description": "Cangjie (仓颉) programming language SDK - nightly build (from cangjie kernel main branch)",
+    "homepage": "https://gitcode.com/Cangjie/nightly_build",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://gitcode.com/Cangjie/nightly_build/releases/download/1.3.0-alpha.20260902010013/cangjie-sdk-windows-x64-1.3.0-alpha.20260902010013.zip",
+            "hash": "e1f58cab2906607a8c33b7d8f11ac86a5e80b0567688548babfc3af6646c6780",
+            "extract_dir": "cangjie"
+        }
+    },
+    "bin": [
+        "bin\\cjc.exe",
+        "bin\\cjc-frontend.exe",
+        "tools\\bin\\cjpm.exe",
+        "tools\\bin\\cjfmt.exe",
+        "tools\\bin\\cjlint.exe",
+        "tools\\bin\\cjdb.exe",
+        "tools\\bin\\cjcov.exe",
+        "tools\\bin\\cjprof.exe",
+        "tools\\bin\\cjtrace-recover.exe",
+        "tools\\bin\\cjcompat.exe",
+        "tools\\bin\\chir-dis.exe",
+        "tools\\bin\\hle.exe"
+    ],
+    "env_set": {
+        "CANGJIE_HOME": "$dir"
+    },
+    "env_add_path": [
+        "bin",
+        "tools\\bin",
+        "tools\\lib",
+        "runtime\\lib\\windows_x86_64_cjnative",
+        "lib\\windows_x86_64_cjnative"
+    ],
+    "checkver": {
+        "url": "https://gitcode.com/api/v5/repos/Cangjie/nightly_build/releases/latest",
+        "jsonpath": "$.tag_name"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://gitcode.com/Cangjie/nightly_build/releases/download/$version/cangjie-sdk-windows-x64-$version.zip",
+                "extract_dir": "cangjie"
+            }
+        }
+    }
+}
