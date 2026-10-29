@@ -1,12 +1,12 @@
 {
-    "version": "1.3.0-alpha.20261029001050",
+    "version": "1.3.0-alpha.20261030001050",
     "description": "Cangjie (仓颉) programming language SDK - nightly build (from cangjie kernel main branch)",
     "homepage": "https://gitcode.com/Cangjie/nightly_build",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://gitcode.com/Cangjie/nightly_build/releases/download/1.3.0-alpha.20261029001050/cangjie-sdk-windows-x64-1.3.0-alpha.20261029001050.zip",
-            "hash": "4684151ea2fd64881146eaf2bacb704452917cac240a984c9e8170d0b9cd4617",
+            "url": "https://gitcode.com/Cangjie/nightly_build/releases/download/1.3.0-alpha.20261030001050/cangjie-sdk-windows-x64-1.3.0-alpha.20261030001050.zip",
+            "hash": "5f911a48b431cb365da614328591b680603b895d98ac4fa471ca9589e25e6691",
             "extract_dir": "cangjie"
         }
     },
